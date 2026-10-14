@@ -5,11 +5,11 @@ A visually engaging and responsive tribute website dedicated to **Dr. A. P. J. A
 This project was developed as part of the **Oasis Infobyte Web Development & Designing Internship – Level 2, Task 2**.
 
 ## 🌐 Live Demo
-
+osisibyte-webdev-l2-tk2-tribute-pag.vercel.app
 
 
 ## 📂 GitHub Repository
-
+https://github.com/Jitendra-razz05/Jitendra-OasisInfobyte-Tasks-WebDev/edit/main/OasisInfobyte-WebDev-L2-Task2-Tribute-Page
 
 
 ## ✨ Features
