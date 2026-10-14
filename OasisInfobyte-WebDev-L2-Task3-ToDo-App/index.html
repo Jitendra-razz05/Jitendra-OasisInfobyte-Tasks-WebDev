@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My To-Do List</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>My To-Do List</h1>
+        <p>Organize your tasks and get things done.</p>
+      </header>
+
+      <!-- Add Task -->
+      <form id="task-form" class="task-form">
+        <input
+          type="text"
+          id="task-input"
+          placeholder="Enter a new task..."
+          maxlength="200"
+          autocomplete="off"
+          required
+        />
+
+        <button type="submit" class="add-btn">Add Task</button>
+      </form>
+
+      <p id="message" class="message" role="status"></p>
+
+      <!-- Pending Tasks -->
+      <section class="task-section">
+        <div class="section-header">
+          <h2>Pending Tasks</h2>
+          <span id="pending-count">0 pending</span>
+        </div>
+
+        <div id="pending-list" class="task-list"></div>
+      </section>
+
+      <!-- Completed Tasks -->
+      <section class="task-section">
+        <div class="section-header">
+          <h2>Completed Tasks</h2>
+          <span id="completed-count">0 completed</span>
+        </div>
+
+        <div id="completed-list" class="task-list"></div>
+      </section>
+
+      <footer>Built with HTML, CSS and JavaScript.</footer>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
