@@ -5,25 +5,25 @@ A visually engaging and responsive tribute website dedicated to **Dr. A. P. J. A
 This project was developed as part of the **Oasis Infobyte Web Development & Designing Internship – Level 2, Task 2**.
 
 ## 🌐 Live Demo
+
 https://osisibyte-webdev-l2-tk2-tribute-pag.vercel.app
 
-
 ## 📂 GitHub Repository
-https://github.com/Jitendra-razz05/Jitendra-OasisInfobyte-Tasks-WebDev/edit/main/OasisInfobyte-WebDev-L2-Task2-Tribute-Page
 
+https://github.com/Jitendra-razz05/Jitendra-OasisInfobyte-Tasks-WebDev/edit/main/OasisInfobyte-WebDev-L2-Task2-Tribute-Page
 
 ## ✨ Features
 
-* 🎨 Clean, modern, and professional design.
-* 🖼️ Prominent portrait of Dr. A. P. J. Abdul Kalam.
-* 📖 Biography section covering his life and contributions.
-* 🏆 Timeline highlighting important milestones and achievements.
-* 💬 Inspirational quote section.
-* 🎨 Elegant navy blue, cream, white, and golden color palette.
-* 🔤 Beautiful typography using Playfair Display and DM Sans.
-* 📱 Responsive layout for desktop, tablet, and mobile devices.
-* 🔗 Navigation links for easy access to different sections.
-* 📚 Research sources included for further reading.
+- 🎨 Clean, modern, and professional design.
+- 🖼️ Prominent portrait of Dr. A. P. J. Abdul Kalam.
+- 📖 Biography section covering his life and contributions.
+- 🏆 Timeline highlighting important milestones and achievements.
+- 💬 Inspirational quote section.
+- 🎨 Elegant navy blue, cream, white, and golden color palette.
+- 🔤 Beautiful typography using Playfair Display and DM Sans.
+- 📱 Responsive layout for desktop, tablet, and mobile devices.
+- 🔗 Navigation links for easy access to different sections.
+- 📚 Research sources included for further reading.
 
 ## 🛠️ Technologies Used
 
@@ -92,20 +92,20 @@ Alternatively, use the Live Server extension in Visual Studio Code for a conveni
 
 Through this project, I practised:
 
-* Writing semantic HTML5.
-* Styling web pages using CSS3.
-* Creating responsive layouts with CSS Grid and media queries.
-* Using different font families and color palettes.
-* Designing structured biography and timeline sections.
-* Improving website navigation and visual hierarchy.
-* Organizing project files for web development.
+- Writing semantic HTML5.
+- Styling web pages using CSS3.
+- Creating responsive layouts with CSS Grid and media queries.
+- Using different font families and color palettes.
+- Designing structured biography and timeline sections.
+- Improving website navigation and visual hierarchy.
+- Organizing project files for web development.
 
 ## 🖼️ Image & Research Sources
 
-* [Wikimedia Commons — Dr. A. P. J. Abdul Kalam https://commons.wikimedia.org/wiki/Category:A._P._J._Abdul_Kalam
-* [Encyclopaedia Britannica — A. P. J. Abdul Kalam]https://www.britannica.com/biography/A-P-J-Abdul-Kalam
+- [Wikimedia Commons — Dr. A. P. J. Abdul Kalam https://commons.wikimedia.org/wiki/Category:A._P._J._Abdul_Kalam
+- [Encyclopaedia Britannica — A. P. J. Abdul Kalam]https://www.britannica.com/biography/A-P-J-Abdul-Kalam
 
-*The image should be used according to its individual license and attribution requirements. Biographical content should be independently paraphrased.*
+_The image should be used according to its individual license and attribution requirements. Biographical content should be independently paraphrased._
 
 ## 👨‍💻 Developer
 
@@ -115,8 +115,8 @@ BCA Student | Aspiring Full Stack Web Developer
 
 📍 Rajasthan, India
 
-* GitHub: [Jitendra-razz05] https://github.com/Jitendra-razz05
-* LinkedIn: [Jitendra Rajpurohit]https://www.linkedin.com/in/jitendra-rajpurohit05/
+- GitHub: [Jitendra-razz05] https://github.com/Jitendra-razz05
+- LinkedIn: [Jitendra Rajpurohit]https://www.linkedin.com/in/jitendra-rajpurohit05/
 
 ## 🙏 Acknowledgement
 
@@ -132,4 +132,4 @@ This project was created for educational and internship purposes. Please check t
 
 **Built with ❤️ using HTML5 and CSS3.**
 
-*Inspired by the life, vision, and legacy of Dr. A. P. J. Abdul Kalam.*
+_Inspired by the life, vision, and legacy of Dr. A. P. J. Abdul Kalam._
