@@ -1,0 +1,618 @@
+/* =========================
+   1. Global Styles
+========================= */
+
+:root {
+    --navy: #101c2c;
+    --navy-light: #17283d;
+    --cream: #f7f4ed;
+    --white: #ffffff;
+    --gold: #d8ad65;
+    --text: #344052;
+    --muted: #77808c;
+    --border: #e4e0d7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: var(--text);
+    background: var(--cream);
+    line-height: 1.8;
+}
+
+h1,
+h2,
+h3,
+blockquote {
+    font-family: "Playfair Display", serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* =========================
+   2. Navigation
+========================= */
+
+.navbar {
+    min-height: 82px;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    background: var(--white);
+}
+
+.logo {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--navy);
+}
+
+.logo span {
+    color: var(--gold);
+}
+
+.navbar nav {
+    display: flex;
+    gap: 32px;
+}
+
+.navbar nav a {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+    transition: color 0.3s ease;
+}
+
+.navbar nav a:hover,
+.navbar nav a:focus-visible {
+    color: #a77832;
+}
+
+/* =========================
+   3. Hero Section
+========================= */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    min-height: 610px;
+    padding: 80px 10%;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 70px;
+    color: var(--white);
+    background: var(--navy);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.eyebrow {
+    color: var(--gold);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 1.8;
+}
+
+.hero h1 {
+    margin: 25px 0;
+    font-size: clamp(43px, 5.3vw, 74px);
+    font-weight: 600;
+    line-height: 1.13;
+    letter-spacing: -2px;
+}
+
+.hero h1 span {
+    color: var(--gold);
+}
+
+.hero-description {
+    max-width: 450px;
+    margin-bottom: 32px;
+    color: #c4cbd5;
+    font-size: 16px;
+}
+
+.primary-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    padding: 14px 21px;
+    background: var(--gold);
+    color: var(--navy);
+    font-size: 13px;
+    font-weight: 700;
+    transition: background 0.3s ease,
+                transform 0.3s ease;
+}
+
+.primary-button:hover {
+    background: #f0cb8c;
+    transform: translateY(-3px);
+}
+
+.hero-image {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    justify-self: center;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    object-position: center top;
+    border: 1px solid rgba(216, 173, 101, 0.6);
+}
+
+.image-caption {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding-top: 15px;
+    color: #d0d5dc;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.hero-number {
+    position: absolute;
+    bottom: -75px;
+    right: 2%;
+    color: rgba(255, 255, 255, 0.035);
+    font-family: "Playfair Display", serif;
+    font-size: 300px;
+    font-weight: 700;
+    pointer-events: none;
+}
+
+/* =========================
+   4. Section Headings
+========================= */
+
+.section-heading {
+    max-width: 720px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin-top: 15px;
+    color: var(--navy);
+    font-size: clamp(30px, 4vw, 45px);
+    line-height: 1.3;
+}
+
+.section-heading h2 span {
+    color: #a77832;
+}
+
+.section-description {
+    margin-top: 16px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* =========================
+   5. Biography Section
+========================= */
+
+.intro {
+    padding: 100px 10%;
+    background: var(--cream);
+}
+
+.biography {
+    max-width: 850px;
+    margin: 0 auto;
+    columns: 2;
+    column-gap: 50px;
+}
+
+.biography p {
+    margin-bottom: 23px;
+    font-size: 14px;
+    line-height: 2;
+    break-inside: avoid;
+}
+
+.values {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 65px;
+}
+
+.values > div {
+    padding: 30px 25px;
+    background: var(--white);
+    border-top: 3px solid var(--gold);
+}
+
+.value-number {
+    color: #a77832;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.values h3 {
+    margin: 12px 0 8px;
+    color: var(--navy);
+    font-size: 23px;
+}
+
+.values p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* =========================
+   6. Timeline Section
+========================= */
+
+.timeline-section {
+    padding: 100px 10%;
+    background: var(--white);
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 100px;
+    width: 2px;
+    background: var(--border);
+}
+
+.timeline-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 35px;
+    margin-bottom: 30px;
+}
+
+.timeline-year {
+    position: relative;
+    padding-top: 25px;
+    color: #a77832;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.timeline-year::after {
+    content: "";
+    position: absolute;
+    top: 33px;
+    right: -43px;
+    width: 14px;
+    height: 14px;
+    border: 3px solid var(--gold);
+    border-radius: 50%;
+    background: var(--white);
+    z-index: 1;
+}
+
+.timeline-card {
+    padding: 23px 28px;
+    border: 1px solid var(--border);
+    background: var(--cream);
+    transition: transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.timeline-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(16, 28, 44, 0.07);
+}
+
+.timeline-card h3 {
+    margin-bottom: 8px;
+    color: var(--navy);
+    font-size: 21px;
+}
+
+.timeline-card p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+/* =========================
+   7. Quote Section
+========================= */
+
+.quote-section {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 10%;
+    text-align: center;
+    color: var(--white);
+    background: var(--navy-light);
+}
+
+.quote-mark {
+    height: 85px;
+    color: var(--gold);
+    font-family: "Playfair Display", serif;
+    font-size: 110px;
+    line-height: 1;
+}
+
+.quote-section blockquote {
+    position: relative;
+    z-index: 1;
+    max-width: 850px;
+    margin: 25px auto;
+    font-size: clamp(25px, 4vw, 43px);
+    line-height: 1.5;
+}
+
+.quote-author {
+    color: var(--gold);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.quote-decoration {
+    margin-top: 45px;
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+/* =========================
+   8. Legacy Section
+========================= */
+
+.legacy {
+    padding: 100px 10%;
+    text-align: center;
+    background: var(--cream);
+}
+
+.legacy h2 {
+    max-width: 780px;
+    margin: 20px auto;
+    color: var(--navy);
+    font-size: clamp(29px, 4vw, 43px);
+    line-height: 1.45;
+}
+
+.legacy > p:not(.eyebrow) {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.text-link {
+    display: inline-block;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--gold);
+    color: #926725;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* =========================
+   9. Footer
+========================= */
+
+.footer {
+    padding: 45px 8%;
+    text-align: center;
+    background: var(--white);
+}
+
+.footer > p {
+    margin-top: 12px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.footer .copyright {
+    margin-top: 20px;
+    font-size: 11px;
+}
+
+.sources a {
+    color: #926725;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* =========================
+   10. Responsive Design
+========================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        padding: 70px 7%;
+        gap: 35px;
+    }
+
+    .intro,
+    .timeline-section,
+    .quote-section,
+    .legacy {
+        padding: 80px 7%;
+    }
+
+    .hero-image img {
+        height: 360px;
+    }
+
+    .biography {
+        columns: 1;
+    }
+
+    .values {
+        gap: 15px;
+    }
+
+    .values > div {
+        padding: 23px 18px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 18px 6%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 22px;
+    }
+
+    .navbar nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 65px 7%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .hero-image {
+        max-width: 330px;
+    }
+
+    .hero-image img {
+        height: 380px;
+    }
+
+    .hero-number {
+        display: none;
+    }
+
+    .intro,
+    .timeline-section,
+    .quote-section,
+    .legacy {
+        padding: 70px 7%;
+    }
+
+    .section-heading {
+        margin-bottom: 38px;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .values {
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+    }
+
+    .timeline::before {
+        left: 5px;
+    }
+
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        margin-left: 25px;
+    }
+
+    .timeline-year {
+        padding-top: 0;
+        text-align: left;
+    }
+
+    .timeline-year::after {
+        top: 7px;
+        right: auto;
+        left: -26px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .timeline-card {
+        padding: 20px;
+    }
+
+    .timeline-card h3 {
+        font-size: 19px;
+    }
+
+    .quote-section blockquote {
+        font-size: 27px;
+    }
+
+    .quote-decoration {
+        font-size: 9px;
+        letter-spacing: 3px;
+    }
+
+    .legacy h2 {
+        font-size: 30px;
+    }
+
+    .footer {
+        padding: 35px 6%;
+    }
+}
+
+/* Accessibility: Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
