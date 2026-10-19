@@ -1,6 +1,6 @@
 // Check whether the user is logged in
 if (!isLoggedIn()) {
-window.location.replace("login.html");
+window.location.replace("index.html");
 } else {
 // Get the current login session
 const session = getSession();
@@ -14,7 +14,7 @@ const user = users.find(
 
 if (!user) {
     sessionStorage.removeItem(SESSION_KEY);
-    window.location.replace("login.html");
+    window.location.replace("index.html");
 } else {
     // Display the logged-in user's username
     document.getElementById("welcome-message").textContent =
@@ -37,7 +37,7 @@ function () {
 sessionStorage.removeItem(SESSION_KEY);
 
 
-    window.location.replace("login.html");
+    window.location.replace("index.html");
 }
 
 );
