@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dashboard - Authentication System</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <main class="dashboard-container">
+      <!-- Dashboard Header -->
+      <header class="dashboard-header">
+        <div>
+          <h1>Dashboard</h1>
+          <p>Your personal account overview</p>
+        </div>
+
+        <button type="button" id="logout-button">Logout</button>
+      </header>
+
+      <!-- Welcome Card -->
+      <section class="welcome-card">
+        <p class="welcome-label">WELCOME BACK 👋</p>
+
+        <h2 id="welcome-message">Welcome!</h2>
+
+        <p>
+          You have successfully logged in to your account. Manage your account
+          information from here.
+        </p>
+      </section>
+
+      <!-- Account Information -->
+      <section>
+        <h2 class="dashboard-section-title">Account Information</h2>
+
+        <div class="dashboard-grid">
+          <article class="info-card">
+            <p class="card-label">Username</p>
+            <p class="card-value" id="username-display">Loading...</p>
+          </article>
+
+          <article class="info-card">
+            <p class="card-label">Email Address</p>
+            <p class="card-value" id="email-display">Loading...</p>
+          </article>
+
+          <article class="info-card">
+            <p class="card-label">Account Status</p>
+            <p class="card-value">
+              <span class="status-badge"> ● Active </span>
+            </p>
+          </article>
+
+          <article class="info-card">
+            <p class="card-label">Login Status</p>
+            <p class="card-value">Authenticated</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="dashboard-footer">
+        <p>Login Authentication System</p>
+        <p>Your account dashboard · Stay secure</p>
+      </footer>
+    </main>
+
+    <script src="js/auth.js" defer></script>
+    <script src="js/dashboard.js" defer></script>
+  </body>
+</html>
